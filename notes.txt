@@ -1,0 +1,274 @@
+java 3 types:
+    (1) J2SE :  For developing standalone app
+                For developing client apps
+
+    (2) J2EE :  For developing enterprise application (client server)
+                For developing web applications
+
+    (3) J2ME :  
+
+Types of Programming Languages:
+    (1) Scripting :
+        For executing we need statements
+        Ex. JS,perl,python,shell etc
+            test.js 
+            console.log("Hello World!!");
+            >> node test.js
+
+    (2) Functional :
+        For executing we need functions
+        Ex. c,python etc
+            test.py 
+            def main();
+                print("Hello world!!")
+
+            main()
+            >> py test.py
+
+    (3) OOPS :
+        For executing we need objects, class
+        Ex.Java,JS,Python etc
+
+    why to set class path: OS will know path of .exe file
+    compile java file and execute class
+        compile : javac file name
+        execute: java class name
+
+    At time of compilation: just verify syntax and generate byte code i.e. .class file
+
+    class is a template, data type, plan/design to construct object
+
+    If class name is public then file name should be public
+	
+	Java class (capital)
+		(1) User Defined
+		(2) Inbuilt class
+		
+	To print something on terminal: System.out.printin("First Program");
+	write per file one java class
+	
+	Bytecode: set of optimized instruction provided by compiler(JVM)
+
+    name in javaprogram: Identifier
+    java is static(Perticular data type) and strongly/strictly typed PL i.e.
+    every java statement ends with semicolon.
+
+Rules for Identifier:
+    (1) Identifier contains (a to z),(A to Z),(0 to 9), _
+    (2) It shouldn't start  with 0 to 9
+    (3) It shouldn't contain any special char/symbol
+    (4) Case sensitive
+    (5) Keyword shouldn't use as Identifier 
+
+    java : 50 +2 keywords
+    JS : 65 keywords
+    python : 35 + 1 keywords
+
+Keywords:
+    - byte,short,int,long,float,double,char,boolean (Data Type)
+    - true,false (boolean)
+    - if-else,for,while,do,break,continue,switch[case,break,default],return (control flow)
+    - public,private,protected,default,static,abstract,synchronised,final ()
+    - class,enum,inheritance,extends,implements,new,this (OOPS)
+    - try, catch,finally,throw,through (error handeling)
+
+Errors:
+    - If class is public, class name and file name should be same 
+    - Non-static variable/method can't ref in static context
+    - Incompatible types
+
+Data Types :
+    (1) Primitive Data Type: Holding single values 
+        Data Type     Size       Default Value
+          byte:        1            0
+          short:       2            0
+          int:         4            0
+          long:        8            0
+
+          float:       4            0.0
+          double:      8            0.0
+
+          char:        1            space 
+
+          boolean:     N/a          false
+
+    (2) Ref Data Types: Hold multiple values
+                        Ref data types and user defined data types printing address of objects except string
+
+        - string                     null
+        - Array
+        - SB 
+        - SB 
+        - Array
+
+    (3) User Defined Data Types:
+
+Methods:
+    (1) static
+    (2) Instance
+
+Variable:
+    (1) Instance
+        - variable value is varied from object to object.
+        - seperate copy will create for every object.
+        - Object variables
+        - How to accress: 
+                    - Using object
+        - scope: Within object
+        - Default value: Depends on data type
+
+    (2) Static
+        - variable value is not varied from object to object.
+        - Only one copy will created and shared to all objects.
+        - class level variables
+        - static keyword
+        - How to access:
+                (1) Using class name
+                (2) Using Object
+                (3) Directly in static context
+        - scope: Class level
+        - Default value: depends on data type
+
+    (3) Local
+        - No default value for local variable hence initialization is required
+
+Operators: 
+    (1) Arithatic: (+), (-), (*), (/), (%)
+
+    (2) Relation: < <= > >=
+
+    (3) Logical: && ||
+
+    (4) Equality: == !=
+
+    (5) Assignment & Compound: = += -= *=
+
+    (6) Incr/Decr: ++ --
+
+    (7) Unary:
+
+    (8) Bitwise:
+
+    Increment Operator:
+        (1) Pre Incr:
+            First Increment then Assignment
+          
+        (2) Post Incr:
+            First Assign then Increment
+
+    Note:
+        (1) Increment or Decrement operators not applicable for literal values only applicable for variables otherwise it will leads to compile time error.
+            Ex. int a=5++; // compile time error
+
+        (2) Final Variables we can't apply incr or decr operators
+            Ex. final int a=10; // compile time error
+
+        (3) Nested increment not possible
+            Ex. int a=10;
+            s.o.p (a++++); // compile time error
+    
+Control-Flow Statement:
+    controlling program execution with the help of group of statements.
+
+Two Types:
+    (1) Conditional Statement:
+        - If
+
+        - if-else
+
+        - switch
+            case
+                break
+            default
+
+        - Ternery 
+
+    (2) Iterative Flow Statement:
+        - for loop
+
+        - while loop
+
+        - do{
+
+            } while()
+
+        - for-each()
+
+    Java Expression contains relational, logical, Equality operator and result is boolean value i.e. true/false
+
+    Developer Responsiblity:
+        - Write Reusable code
+
+    Array:
+        Represent group of elements as one entity
+        allowed duplicates
+        Not allowed Heterogenous
+        Array elements are storing based on indexing
+        -ve indexing not possible
+        insertion order maintained
+        array is fixed nature i.e. once array is created we can't add new element and delete element 
+
+    (1) Declaration:
+        int[] eids;
+        String[] enames;
+        char[] avail;
+
+    (2) Creation:
+        eids= new int[4];
+        enames=new String[3];
+        need to mention size here
+
+    (3) initialization:
+        eids[0]=101;
+        eids[1]=102;
+        eids[2]=103;
+
+    (4) Declaration, Creation, initialization 
+        int[] eids={101,102,103};
+
+    - No initialization then dafault value of array
+        int     = 0
+        string  = null
+        float   = 0.0
+        double  = 0.0
+        boolean = false
+
+    Different operation on array
+        (1) Create Array
+        ex. int[] eids={101,102,103};
+
+        (2) Read Array
+        ex. s.o.p(eids) // Address 
+            s.o.p(eids[0]); // 101
+            s.o.p(eids[1]); // 102
+            s.o.p(eids[2]); // 103
+            s.o.p(eids[3]); // Runtime Exception
+
+        (3) Update Array
+        ex. eids[2]=205;
+            s.o.p(eids[2]); // 205
+
+        (4) Delete Array
+            Once array created, we can't increase size and decrease size
+            Add new element not possible
+            delete new element possible
+    
+    Length Property:
+        Applicable for Array
+        Return Array Size
+
+    Length() method
+        Applicable for string
+        Return String length
+        
+    What is package:
+        To group related java classes and interfaces as a one entity to avoid naming conflict.
+
+    How to run package:
+        compile:
+            javac -d . Test.java(file name)
+                compile and place .class file in specified folder`
+
+        Execute:
+            java com.fk.users.Test(class name)
+

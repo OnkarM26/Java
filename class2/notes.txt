@@ -1,0 +1,104 @@
+java 3 types:
+    (1) J2SE :  For developing standalone app
+                For developing client apps
+
+    (2) J2EE :  For developing enterprise application (client server)
+                For developing web applications
+
+    (3) J2ME :  
+
+Types of Programming Languages:
+    (1) Scripting :
+        For executing we need statements
+        Ex. JS,perl,python,shell etc
+            test.js 
+            console.log("Hello World!!");
+            >> node test.js
+
+    (2) Functional :
+        For executing we need functions
+        Ex. c,python etc
+            test.py 
+            def main();
+                print("Hello world!!")
+
+            main()
+            >> py test.py
+
+    (3) OOPS :
+        For executing we need objects, class
+        Ex.Java,JS,Python etc
+
+    why to set class path: OS will know path of .exe file
+    compile java file and execute class
+        compile : javac file name
+        execute: java class name
+
+    At time of compilation: just verify syntax and generate byte code i.e. .class file
+
+    class is a template, data type, plan/design to construct object
+
+    If class name is public then file name should be public
+	
+	Java class (capital)
+		(1) User Defined
+		(2) Inbuilt class
+		
+	To print something on terminal: System.out.printin("First Program");
+	write per file one java class
+	
+	Bytecode: set of optimized instruction provided by compiler(JVM)
+
+    name in javaprogram: Identifier
+    java is static(Perticular data type) and strongly/strictly typed PL i.e.
+    every java statement ends with semicolon.
+
+Rules for Identifier:
+    (1) Identifier contains (a to z),(A to Z),(0 to 9), _
+    (2) It shouldn't start  with 0 to 9
+    (3) It shouldn't contain any special char/symbol
+    (4) Case sensitive
+    (5) Keyword shouldn't use as Identifier 
+
+    java : 50 +2 keywords
+    JS : 65 keywords
+    python : 35 + 1 keywords
+
+Keywords:
+    - byte,short,int,long,float,double,char,boolean (Data Type)
+    - true,false (boolean)
+    - if-else,for,while,do,break,continue,switch[case,break,default],return (control flow)
+    - public,private,protected,default,static,abstract,synchronised,final ()
+    - class,enum,inheritance,extends,implements,new,this (OOPS)
+    - try, catch,finally,throw,through (error handeling)
+
+Errors:
+    - If class is public, class name and file name should be statement
+    - Non-static variable/method can't ref in static context
+    - Incompatible types
+
+Data Types :
+    (1) Primitive Data Type: Holding single values 
+        - byte: 1
+        - short: 2
+        - int: 4
+        - long:8
+
+        - float:4
+        - double:8
+
+        - char:1
+
+        -boolean:N/a
+
+    (2) Ref Data Types: Hold multiple values
+                        Ref data types and user defined data types printing address of objects except string
+
+        - string
+        - Array
+        - SB 
+        - SB 
+        - Array
+
+    (3) User Defined Data Types:
+    
